@@ -1,6 +1,7 @@
 package models
 
 type ToDoList struct {
+	Id         int64    `json: "id"`
 	Title      string   `json: "title"`
 	List       []string `json: "list"`
 	StatusList Status   `json: "status"`

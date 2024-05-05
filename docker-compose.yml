@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  # MySQL
+  redis:
+    container_name: redis-estudos
+    image: redis:alpine
+    ports:
+      - '6379:6379'
+    volumes:
+      - '~/dockerdata/.docker/redis/data:/data'
